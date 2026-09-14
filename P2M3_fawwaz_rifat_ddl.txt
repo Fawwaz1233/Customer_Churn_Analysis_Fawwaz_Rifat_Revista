@@ -1,0 +1,25 @@
+URL = https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn
+DDL :
+CREATE TABLE table_m3 (
+    RowNumber SERIAL PRIMARY KEY,
+    CustomerId INTEGER,
+    Surname TEXT,
+    CreditScore INTEGER,
+    Geography TEXT,
+    Gender VARCHAR(10),
+    Age INTEGER,
+    Tenure INTEGER,
+    Balance DECIMAL(20,2),
+    NumOfProducts INTEGER,
+    HasCrCard BOOLEAN,
+    IsActiveMember BOOLEAN,
+    EstimatedSalary DECIMAL(20,2),
+    Exited BOOLEAN,
+    Complain BOOLEAN,
+    "Satisfaction Score" INTEGER,
+    "Card Type" VARCHAR(10),
+    "Point Earned" INTEGER
+);
+
+DML (PSQL Tool) :
+\COPY table_m3 FROM 'D:\Hacktiv8\Tugas-tugas\M3\p2-ftds039-rmt-m3-Fawwaz1233\project-m3\P2M3_fawwaz_rifat_data_raw.csv' DELIMITER ',' CSV HEADER;

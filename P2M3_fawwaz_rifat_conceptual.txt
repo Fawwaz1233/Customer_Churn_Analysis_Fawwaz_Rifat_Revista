@@ -1,0 +1,53 @@
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+    NoSQL adalah platform/database yang khususnya digunakan untuk menyimpan data 
+    yang tidak berstruktur/ tidak tabular, atau lebih tepatnya untuk menyimpan 
+    semistructured data dan unstructured data. Data-data ini disimpan dalam
+    non-relational database systems, berbeda dengan SQL yang merupakan data
+    terstruktur dan disimpan dalam relational database management systems.
+    Dari segi query, NoSQL dan SQL tidak terlalu berbeda jauh.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+    NoSQL digunakan ketika ingin menyimpan/berinteraksi dengan data yang berbentuk 
+    semistructured atau unstructured, sedangkan RDMS digunakan untuk data yang 
+    terstruktur atau tabular.
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+    1. MongoDB
+    MongoDB memiliki format file BSON yang merupakan ekstensi dari JSON dan memiliki kelebihan dibandingkan
+    JSON, yaitu support data binary, seperti gambar, audio. Slain itu MongoDB memiliki skema yang lebih
+    fleksibel dan cocok digunakan untuk aplikasi yang memiliki sifat ACID atau real time.
+    
+    2. Cassandra
+    Cassandra memiliki kelebihan dimana memiliki ketahanan lebih terhadap kegagalan yang mana tetap dapat 
+    bekerja meskipun terdapat node yang gagal.
+
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+    Airflow adaalh sebuah open-source platform yang memungkinkan penggunannya untuk mengembangkan
+    atau membuat, menjadwalkankan, dan melakukan moitoring terhadap workflow pipeline yang berbasis
+    batch-oriented. Airflow memungkinkan pengguna untuk mengmabil data dari berbagai sumber termasuk
+    database dan melakukan preprocessing data, membuat model, hingga deployment hanya dalam 1 file
+    atau flow. 
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+    Great Expectations adalah python library yang fungsinya untuk melakukan validasi data sebelum data
+    digunakan. Validasi data ini dilakukan dengan menentukan beberapa kriteria yang harus dipenuhi 
+    dataset untuk lolos uji validasi, seperti memiliki unique value, value tidak lebih besar dari
+    nilai maksimal, tidak terdapat missing value, dll.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri 
+   (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+   Batch processing adalah metode pemrosesan data jumlah besar yang dilakukan pada satu atau beberapa
+   komputer. Prosesnya data dikumpulkan dalam suatu batch, lalu diproses untuk memenuhi suatu kondisi
+   tertentu, lalu dikirim ke tempat penyimpanan atau databse yang datanya dapat diambil dengan 
+   menggunakan query.
+   
+   Contoh :
+   Melakukan Extract, Transform, Load (ETL). ETL adalah proses yang dimulai dari mengambil/mengekstrak
+   data dari database, lalu ditransformasi/cleaning data, hingga pada tahap akhir, yaitu Load untuk 
+   menyimpan data yang telah bersih ke database.
+
+   Tools :
+   Tools yang sering digunakan adalah PySpark yang dapat digunakan untuk ETL, Machine Learning modeling,
+   dan deployment.
+    
